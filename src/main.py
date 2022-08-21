@@ -9,11 +9,14 @@ else:
 	
 	print("Read the readme at github",end='')
 	#https://youtu.be/tPEE9ZwTmy0
+	data = ["https://youtu.be/tPEE9ZwTmy0","done"]
+	num = 0
 	running = True
 	while running:
 		print('\nYou are home 🏠')
 		try:
-			url = "https://youtu.be/tPEE9ZwTmy0" #(input('\nPaste url here: '))
+			url = data[num]#(input('\nPaste url here: '))
+			
 			m = ""#input('\nEnter pl for playlist 📋 or leave blank: ')
 		
 		
@@ -35,6 +38,7 @@ else:
 					stm = yt.streams.get_by_itag(choice)
 					
 					print(f'Video saved in {stm.download()}\nDone.\n\n')
+					num+=1;
 				
 			# playlist
 				if m == 'pl':
