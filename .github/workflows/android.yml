@@ -1,4 +1,4 @@
-name: Learning linux
+name: Build youtube video downloader
 on:
   push:
     branches: [ "main" ]
@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: First job
-      run: ls
-    - run: chmod +x HelloLinux.sh && ./HelloLinux.sh
+    - uses: actions/setup-python@v4
+      with:
+        python-version: 3.10
+    - run: chmod +x HelloLinux.sh
+    - run: ./HelloLinux.sh
