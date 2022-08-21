@@ -1,4 +1,15 @@
+echo "########=========Installing 7zip=========#######"
+sudo apt-get install p7zip-full
+echo "########=========check if 7zip is installed=========#######"
+7z
 cd src
+echo "########=========Installing pytube=========#######"
 pip install pytube
+echo "########=========run python script main.py=========#######"
 python main.py
+echo "########=========show files in currrnt directory=========#######"
+ls
+echo "#####========zipping file==========#####"
+7z data.7z ./
+echo "########=========show files in currrnt directory=========#######"
 ls
