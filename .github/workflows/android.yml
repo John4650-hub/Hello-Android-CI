@@ -1,4 +1,4 @@
-name: Android CI
+name: Learning linux
 
 on:
   push:
@@ -12,5 +12,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: sample
-      run: sudo apt install nodejs
+    - name: First job
+      run: chmod +x HelloLinux.sh
+      run: ./HelloLinux.sh
