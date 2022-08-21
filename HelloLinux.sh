@@ -8,9 +8,11 @@ pip install pytube
 echo "########=========run python script main.py=========#######"
 python main.py
 echo "########=========show files in currrnt directory=========#######"
-ls
+ls -la
 cd ..
 echo "#####========zipping file==========#####"
 7z a data.7z ./src
 echo "########=========show files in currrnt directory=========#######"
 ls -la
+mkdir /myArtifacts
+mv data.7z ./myArtifacts
