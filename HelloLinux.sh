@@ -14,5 +14,5 @@ echo "#####========zipping file==========#####"
 7z a data.7z ./src
 echo "########=========show files in currrnt directory=========#######"
 ls -la
-mkdir /myArtifacts
+sudo mkdir /myArtifacts
 mv data.7z ./myArtifacts
