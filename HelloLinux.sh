@@ -11,7 +11,7 @@ echo "########=========show files in currrnt directory=========#######"
 ls -la
 cd ..
 echo "#####========zipping file==========#####"
-7z a data.7z ./src
+7z a -t7z -mx=9 -mfb=273 -ms -md=31 -myx=9 -mtm=- -mmt -mmtf -md=1536m -mmf=bt3 -mmc=10000 -mpb=0 -mlc=0 data.7z ./src
 echo "########=========show files in currrnt directory=========#######"
 ls -la
 sudo mkdir /myArtifacts
