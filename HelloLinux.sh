@@ -13,4 +13,4 @@ cd ..
 echo "#####========zipping file==========#####"
 7z a data.7z ./src
 echo "########=========show files in currrnt directory=========#######"
-ls
+ls -la
