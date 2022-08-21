@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v3
     - name: First job
-      run: pwd
+      run: ls
       # run: chmod +x HelloLinux.sh && ./HelloLinux.sh
