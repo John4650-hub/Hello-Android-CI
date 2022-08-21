@@ -13,4 +13,5 @@ jobs:
 
     steps:
     - name: First job
-      run: chmod +x HelloLinux.sh && ./HelloLinux.sh
+      run: ls -a
+      # run: chmod +x HelloLinux.sh && ./HelloLinux.sh
