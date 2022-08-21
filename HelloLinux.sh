@@ -9,7 +9,8 @@ echo "########=========run python script main.py=========#######"
 python main.py
 echo "########=========show files in currrnt directory=========#######"
 ls
+cd ..
 echo "#####========zipping file==========#####"
-7z data.7z ./
+7z a data.7z ./src
 echo "########=========show files in currrnt directory=========#######"
 ls
