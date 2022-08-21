@@ -13,4 +13,4 @@ jobs:
 
     steps:
     - name: sample
-      run: pkg install nodejs
+      run: sudo apt install nodejs
