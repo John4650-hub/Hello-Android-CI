@@ -12,7 +12,7 @@ ls -la
 cd ..
 echo "#####========zipping file==========#####"
 7z a data.7z ./src
-echo "########=========show files in currrnt directory=========#######"
+echo "########=========show files in currrent directory=========#######"
 ls -la
 sudo mkdir /myArtifacts
 mv data.7z ./myArtifacts

@@ -18,7 +18,7 @@ else:
 			url = data[num]#(input('\nPaste url here: '))
 			
 			m = ""#input('\nEnter pl for playlist 📋 or leave blank: ')
-		
+			
 		
 			if url == 'done' and m == '':
 				running = False
@@ -34,7 +34,7 @@ else:
 					audio_qualities = yt.streams.filter(only_audio = True)
 					print('\nAvailable audio qualities')
 					audio_quality(audio_qualities)
-					choice = 17#int(input('choose prefered itag: '))
+					choice = 18#int(input('choose prefered itag: '))
 					stm = yt.streams.get_by_itag(choice)
 					
 					print(f'Video saved in {stm.download()}\nDone.\n\n')
