@@ -3,5 +3,5 @@ ls
 echo "========"
 cd myArtifacts
 pwd
-sudo git clone https://github.com/codepath/android_guides.wiki.git
-ls
+sudo git clone https://github.com/mrdoob/three.js.git
+ls -la
