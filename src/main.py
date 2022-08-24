@@ -9,7 +9,7 @@ else:
 	
 	print("Read the readme at github",end='')
 	#https://youtu.be/tPEE9ZwTmy0
-	data = ["https://youtu.be/cT_ZYrS3tKc","done"]
+	data = ["https://youtu.be/rGDVPFfnwMk","done"]
 	num = 0
 	running = True
 	while running:
