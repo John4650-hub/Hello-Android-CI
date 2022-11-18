@@ -24,3 +24,4 @@ workflows:
   example_workflows:
     jobs:
       - show_files
+      - greet_usr
