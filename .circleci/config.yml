@@ -20,3 +20,7 @@ jobs:
                command: |
                  echo "GOOD MORNING JOHN"
 
+workflows:
+  example_workflows:
+    jobs:
+      - show_files
