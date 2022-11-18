@@ -31,7 +31,14 @@ jobs:
 workflows:
   example_workflows:
     jobs:
-      - show_files
-      - greet_usr
-      - using_node
+      - show_files:
+        type: approval
+      - greet_usr:
+        requires:
+          - show-files
+      - using_node:
+        type: approval
+        requires:
+          - show_files
+          - greet_usr
 
