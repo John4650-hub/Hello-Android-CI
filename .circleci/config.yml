@@ -15,7 +15,11 @@ jobs:
           docker:
             - image: cimg/base:2021.04
           steps:
-            - run: echo "GOOD MORNING JOHN"
+            - run:
+              name: Greet user
+              command: |
+                echo "GOOD MORNING JOHN"
+
  workflows:
    example_workflows:
      jobs:
