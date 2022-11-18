@@ -24,13 +24,13 @@ jobs:
       - image: cimg/node:17.2
     steps:
       - run:
-        name: Show node version
-        command: |
-          node -v
+         name: Show node version
+         command: |
+           node -v
 
 workflows:
   example_workflows:
     jobs:
-      - use_node
       - show_files
       - greet_usr
+      - use_node
