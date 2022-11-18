@@ -16,9 +16,9 @@ jobs:
             - image: cimg/base:2021.04
           steps:
             - run:
-              name: Greet user
-              command: |
-                echo "GOOD MORNING JOHN"
+               name: Greet user
+               command: |
+                 echo "GOOD MORNING JOHN"
 
  workflows:
    example_workflows:
