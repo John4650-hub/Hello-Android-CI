@@ -2,7 +2,7 @@ version: 2.1
 
 jobs:
   # Job one with a unique name
-  build:
+  show_files:
     docker:
       - image: alpine:3.15
     steps:
@@ -11,6 +11,13 @@ jobs:
          name: show all files in current folder
          command: |
            ls -a
-           echo "___My files___"
-
-
+  greet_usr:
+          docker:
+            - image: cimg/base:2021.04
+          steps:
+            - run: echo "GOOD MORNING JOHN"
+ workflows:
+   example_workflows:
+     jobs:
+       - show_files
+       - greet_usr
