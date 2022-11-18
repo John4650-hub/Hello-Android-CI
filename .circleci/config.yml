@@ -9,7 +9,7 @@ jobs:
       - run:
          name: install clang
          command: |
-           sudo apt install clang
+           sudo apt-get install clang
       - run:
          name: run C file
          command: |
