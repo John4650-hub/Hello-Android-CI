@@ -19,9 +19,18 @@ jobs:
                name: Greet user
                command: |
                  echo "GOOD MORNING JOHN"
+  using_node:
+    docker:
+      - image: cimg/node:17.2
+    steps:
+      - run:
+        name: Show node version
+        command: |
+          node -v
 
 workflows:
   example_workflows:
     jobs:
+      - use_node
       - show_files
       - greet_usr
