@@ -1,42 +1,15 @@
 version: 2.1
 
 jobs:
-  # Job one with a unique name
-  show_files:
-    docker:
-      - image: alpine:3.15
+  run-code:
     steps:
       - checkout
-      - run: 
-         name: show all files in current folder
-         command: |
-           ls -a
-  greet_usr:
-          docker:
-            - image: cimg/base:2021.04
-          steps:
-            - run:
-               name: Greet user
-               command: |
-                 echo "GOOD MORNING JOHN"
-  using_node:
-    docker:
-      - image: cimg/node:17.2
-    steps:
       - run:
-         name: Show node version
+         name: install clang
          command: |
-           node -v
-
-workflows:
-  example_workflows:
-    jobs:
-      - show_files:
-         type: approval
-      - greet_usr
-      - using_node:
-         type: approval
-         requires:
-           - show_files
-           - greet_usr
-
+           sudo apt install clang
+      - run:
+         name: run C file
+         command: |
+           clang main.c
+           ./a.out
