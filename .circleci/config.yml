@@ -33,9 +33,7 @@ workflows:
     jobs:
       - show_files:
          type: approval
-      - greet_usr:
-         requires:
-           - show-files
+      - greet_usr
       - using_node:
          type: approval
          requires:
