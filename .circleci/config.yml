@@ -8,9 +8,9 @@ jobs:
     steps:
       - checkout
       - run: 
-        name: show all files in current folder
-        command: |
-          ls -a
-          echo "___My files___"
+         name: show all files in current folder
+         command: |
+           ls -a
+           echo "___My files___"
 
 
