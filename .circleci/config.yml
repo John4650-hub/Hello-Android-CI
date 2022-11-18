@@ -14,3 +14,4 @@ jobs:
          name: write to file
          command: |
            python main.py
+           ls -a
