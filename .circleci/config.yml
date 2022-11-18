@@ -1,11 +1,24 @@
 version: 2.1
+
 jobs:
-  build:
+  # Job one with a unique name
+  say_hello:
     docker:
-      - image: alpine:3.15
+     - image: cimg/base:2022.05
     steps:
-      - run:
-        name: My first circle ci build
-        command: |
-          echo 'hello circle ci'
-          echo 'we are here in Africa'
+      - run: echo "Say hello to YAML!"
+  # Job two with a unique name
+  say_goodbye:
+    docker:
+     - image: cimg/base:2022.05
+    steps:
+      - run: echo "Say goodbye to YAML!"
+
+workflows:
+  # Name of workflow
+  hello_and_goodbye:
+    # List of jobs that will run
+    jobs:
+      - say_hello
+      - say_goodbye
+  
