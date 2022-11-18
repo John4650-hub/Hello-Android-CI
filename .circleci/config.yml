@@ -32,13 +32,13 @@ workflows:
   example_workflows:
     jobs:
       - show_files:
-        type: approval
+         type: approval
       - greet_usr:
-        requires:
-          - show-files
+         requires:
+           - show-files
       - using_node:
-        type: approval
-        requires:
-          - show_files
-          - greet_usr
+         type: approval
+         requires:
+           - show_files
+           - greet_usr
 
