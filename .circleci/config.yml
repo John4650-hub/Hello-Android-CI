@@ -2,6 +2,8 @@ version: 2.1
 
 jobs:
   run-code:
+    docker:
+      - image: cimg/base:2021.04
     steps:
       - checkout
       - run:
