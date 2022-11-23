@@ -18,3 +18,4 @@ jobs:
        with:
          name: MainC
          path: ./main.c
+         check_artifacts: true
