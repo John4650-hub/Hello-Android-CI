@@ -15,3 +15,5 @@ jobs:
      - name: Download C
        id: downloadCfile
        uses: dawidd6/action-download-artifact@v2
+       with:
+         name: MainC
