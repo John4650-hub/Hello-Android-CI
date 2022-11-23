@@ -7,7 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - uses: actions/checkout@v3
-     - uses: actions/download-artifact@v3
+     - uses: actions/upload-artifact@v3
        with:
-         name: getC file
+         name: MainC
          path: ./main.c
+
+     - name: Download C
+       id: download C file
+       uses: dawidd6/action-download-artifact@v2
