@@ -13,5 +13,5 @@ jobs:
          path: ./main.c
 
      - name: Download C
-       id: download C file
+       id: downloadCfile
        uses: dawidd6/action-download-artifact@v2
