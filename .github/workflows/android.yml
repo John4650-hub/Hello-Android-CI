@@ -12,10 +12,8 @@ jobs:
          name: MainC
          path: ./main.c
 
-     - name: Download C
-       id: downloadCfile
-       uses: dawidd6/action-download-artifact@v2
+     - uses: actions/download-artifact@v3
        with:
          name: MainC
-         path: ./main.c
-         check_artifacts: true
+
+     - run: ls -R
