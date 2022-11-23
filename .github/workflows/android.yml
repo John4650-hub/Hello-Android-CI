@@ -12,8 +12,10 @@ jobs:
          name: MainC
          path: ./main.c
 
+     - run: mkdir downloads
      - uses: actions/download-artifact@v3
        with:
          name: MainC
+         path: ./downloads
 
      - run: ls -R
