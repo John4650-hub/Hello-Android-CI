@@ -8,7 +8,7 @@ jobs:
     steps:
      - uses: actions/checkout@v3
      - run: curl -O https://github.com/google/bundletool/releases/download/1.13.1/bundletool-all-1.13.1.jar
-     - run: ls
+     - run: ls -lh
      - uses: actions/upload-artifact@v3
        with:
          name: MainC
